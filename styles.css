@@ -1,0 +1,98 @@
+body {
+
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 { 
+    color: rgb(225, 211, 84);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(225, 211, 84);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(225, 211, 84);
+}
+
+h4 {
+    text-align: center;
+    color: rgb(47, 144, 234);
+}
+
+.project {
+width: 30%;
+margin: 10px;
+padding: 20px 20px;
+flex-direction: column;
+background: rgb(91, 88, 88);
+border-radius: 25%;
+align-items: center;
+text-align: center;
+color: white;
+}
+
+.project img{
+width: 300px;
+height: 300px;
+margin: 10px;
+border: 2px solid rgb(244, 243, 235);
+display: block;
+margin: auto;
+text-align: center;
+align-items: center;
+}
+
+a { 
+text-decoration: none;
+color: whitesmoke;
+text-align: center;
+}
+
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: center;
+    color: whitesmoke;
+    }
+
+.about img {
+    width: 150px;
+    height: 200px;
+    border-radius: 25%;
+    border: 2px solid rgb(242, 240, 244);
+    }
+
+.aboutus p {
+    width:50%;
+    margin: auto;
+    text-align: center;
+    line-height: 125%;
+    color: whitesmoke;
+}
+
+
+.skills p {
+    width:50%;
+    margin: auto;
+    text-align: center;
+    line-height: 125%;
+    color: whitesmoke;
+}
+
+.skills {
+    display:flex;
+    flex-wrap:wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: center;
+    color: whitesmoke;
+    }
