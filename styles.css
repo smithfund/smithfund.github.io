@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6; /* Increases space between lines for easier reading */
+    font-size: 1.1em; /* Slightly increases base font size */
+    /* --- New Additions for Sticky Footer --- */
+    display: flex; /* Make the body a flex container */
+    flex-direction: column; /* Stack its children (header, main, footer) vertically */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    /* --- End New Additions --- */
+
+}
+
+p {
+    margin-bottom: 1em; /* Adds space below paragraphs, adjust as needed */
+    max-width: 75ch; /* Limits line length to enhance readability (around 75 characters) */
+    /* text-align: justify; */ /* Optional: Makes text align to both left and right edges */
+    text-decoration: none;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header { 
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 a {
+
+    text-align: center;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+h3 a:hover {
+
+    color: #ecc903; /* Slightly darker navy on hover */
+    transform: scale(1.02); /* Slight scale up on hover */
+
+}
+
+h1, h2 {
+    color: #000000;
+    margin-top: 1.5em; /* Space above headings */
+    margin-bottom: 0.8em; /* Space below headings */
+    line-height: 1.2; /* Tighter line height for headings */
+    letter-spacing: -0.02em; /* Slightly reduces space between letters for a tighter look */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+.navbar {
+    display: flex; /* Makes items arrange horizontally */
+    align-items: center; /* Vertically aligns items in the center */
+    padding: 15px 20px;
+    background-color: #000000;
+    color: #f5f5ff;
+    justify-content: space-between; /* Pushes company name to left, nav to right */
+}
+
+.logo {
+    height: 50px; /* Adjust this value to control the height of your logo */
+    margin-right: 10px; /* Adds space between the logo and the company name */
+    padding-right: 10px;
+    width: 50px;
+}
+
+.company-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-right: 30px; /* Space between company name and nav links */
+}
+
+nav ul {
+    list-style: none; /* Removes bullet points from list items */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Makes the list items horizontal */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav links */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ecc903; /* Change color on hover */
+}
+
+main {
+    padding: 20px 40px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* --- New Addition for Sticky Footer --- */
+    flex-grow: 1; /* This makes the main content area take up all available vertical space */
+    /* --- End New Addition --- */
+}
+
+.who-we-are-layout {
+    display: flex; /* Enables Flexbox for horizontal arrangement */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 30px; /* Space between the two columns */
+    justify-content: space-between; /* Distributes space between items */
+}
+
+.who-we-are-content,
+.statistics-section {
+    flex: 1; /* Allows both sections to grow and shrink */
+    min-width: 300px; /* Ensures columns don't get too narrow on smaller screens */
+}
+
+.statistics-section {
+    /* Specific styles for the "Statistics" column if needed */
+    background-color: #f9f9f9; /* Light grey background for the statistics box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+/* --- New Styles for Contact Us Page --- */
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 25px; /* Space between contact items */
+    justify-content: center; /* Centers contact items */
+    margin-top: 30px;
+}
+
+.contact-item {
+    background-color: #f9f9f9; /* Light grey background for each contact card */
+    border: 1px solid #eee; /* Subtle border */
+    border-radius: 8px;
+    padding: 25px;
+    flex: 1; /* Allows items to grow and shrink */
+    min-width: 280px; /* Minimum width for each card before wrapping */
+    max-width: 350px; /* Maximum width for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+    text-align: center; /* Center align text within each card */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.contact-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.contact-item h2 {
+    color: #000000; /* Navy blue for contact names */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.contact-item p {
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    display: inline-block; /* Allows padding and margin to be applied */
+    background-color: #000000; /* Navy blue background for links */
+    color: #ffffff; /* White text for links */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 5px; /* Space between links if multiple */
+}
+
+.contact-link:hover {
+    background-color: #48485c; /* Slightly darker navy on hover */
+    transform: scale(1.02); /* Slight scale up on hover */
+}
+
+/* Add any other general styles you want for p tags or main content if not already there */
+/* For example, if you want to ensure general <p> tags in main are readable navy: */
+main p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Responsive adjustment for very small screens */
+@media (max-width: 600px) {
+    .contact-item {
+        min-width: unset; /* Remove min-width to allow more flexibility */
+        max-width: 90%; /* Take up more width on very small screens */
+    }
+}
